@@ -126,3 +126,75 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+* {
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+body {
+  background: hsl(217, 28%, 15%);
+}
+.container {
+  background: hsl(217, 28%, 15%);
+  height: 100vh;
+  margin: 0 auto;
+  font-size: 1.6rem;
+  font-family: "Raleway";
+  width: 100%;
+  max-width: 120rem;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  margin: 7rem 3rem;
+}
+.nav__logo {
+  margin-right: auto;
+}
+.nav__link {
+  text-decoration: none;
+  font-family: "Raleway";
+  color: #a3a3a3;
+  margin-right: 6rem;
+}
+.nav__link--3 {
+  margin-right: 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  text-align: center;
+}
+.header *:not(:last-child) {
+  margin-bottom: 3rem;
+}
+.header__img {
+  height: auto;
+  width: 50%;
+}
+.header__main {
+  font-size: 3rem;
+  font-weight: 700;
+  width: 50%;
+}
+.header__sub {
+  width: 40%;
+  color: #a3a3a3;
+}
+.header__button {
+  border: none;
+  background: linear-gradient(to right, hsl(176, 68%, 64%), hsl(198, 60%, 50%));
+  color: white;
+  font-family: "Open Sans";
+  border-radius: 50px;
+  padding: 1rem 6rem;
+}
