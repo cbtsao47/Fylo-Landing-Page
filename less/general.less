@@ -1,0 +1,29 @@
+* {
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  background: @primary-dark-blue-1;
+}
+
+.container-intro,
+.container-feature {
+  width: 80%;
+  margin: 0 auto;
+  height: 100vh;
+}
+.container-intro {
+  position: relative;
+}
+.wavy {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+  bottom: 0;
+}
+.container-feature {
+  background: @primary-dark-blue-2;
+  position: relative;
+  z-index: 2;
+}

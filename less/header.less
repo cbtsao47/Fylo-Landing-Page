@@ -1,0 +1,30 @@
+.header {
+  text-align: center;
+  position: relative;
+  z-index: 99;
+  &__container {
+    margin: 0 auto;
+    width: 60%;
+    line-height: 1.6;
+  }
+  &__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  &__heading-sub {
+    color: @links;
+  }
+  &__button {
+    margin: 4rem 0;
+    margin-bottom: 5rem;
+    border: none;
+    padding: 1.5rem 6rem;
+    border-radius: 50px;
+    background: linear-gradient(to right, @cyan, @blue);
+    color: @white;
+    font-size: 1.8rem;
+    font-weight: 700;
+  }
+}
