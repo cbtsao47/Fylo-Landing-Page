@@ -144,6 +144,13 @@ body {
   font-family: "Raleway";
   width: 100%;
   max-width: 120rem;
+  position: relative;
+}
+main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 .nav {
   display: flex;
@@ -151,6 +158,9 @@ body {
   align-items: center;
   flex-direction: row;
   margin: 7rem 3rem;
+  position: sticky;
+  top: 7rem;
+  z-index: 999;
 }
 .nav__logo {
   margin-right: auto;
@@ -165,6 +175,8 @@ body {
   margin-right: 0;
 }
 .header {
+  position: relative;
+  z-index: 99;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -172,7 +184,9 @@ body {
   color: white;
   font-size: 1.6rem;
   margin: 0 auto;
+  margin-top: 13.2rem;
   text-align: center;
+  line-height: 1.4;
 }
 .header *:not(:last-child) {
   margin-bottom: 3rem;
@@ -197,4 +211,45 @@ body {
   font-family: "Open Sans";
   border-radius: 50px;
   padding: 1rem 6rem;
+}
+.header .wavy {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+.features {
+  background: hsl(218, 28%, 13%);
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.feature {
+  max-width: 40rem;
+  margin: 5rem;
+  text-align: center;
+  flex-basis: 39%;
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 1.4;
+}
+.feature__image {
+  height: auto;
+  width: 20%;
+}
+.feature__heading {
+  margin: 2rem 0 1rem;
+  color: white;
+  font-weight: 700;
+}
+.feature__description {
+  color: #a3a3a3;
 }

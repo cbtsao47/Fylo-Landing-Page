@@ -1,0 +1,30 @@
+.features {
+  background: @primary-dark-2;
+  position: relative;
+  z-index: 1;
+  .flex(row, center, center);
+  flex-wrap: wrap;
+  margin: 0 auto;
+  //   margin-top: 15rem;
+}
+.feature {
+  max-width: 40rem;
+  margin: 5rem;
+  text-align: center;
+  flex-basis: 39%;
+  align-self: stretch;
+  .flex(column, center, center);
+  line-height: 1.4;
+  &__image {
+    height: auto;
+    width: 20%;
+  }
+  &__heading {
+    margin: 2rem 0 1rem;
+    color: @font-color;
+    font-weight: 700;
+  }
+  &__description {
+    color: @paragraph-color;
+  }
+}
