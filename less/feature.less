@@ -1,0 +1,67 @@
+.feature {
+  .flex(row, center, center);
+  flex-wrap: wrap;
+  &__box {
+    padding: 5rem;
+    width: 40%;
+    align-self: stretch;
+    text-align: center;
+    // vertical-align: middle;
+  }
+  &__img {
+  }
+  &__text {
+    &--heading {
+      font-size: 3rem;
+      color: @white;
+    }
+    &--description {
+      color: @links;
+      font-size: 2rem;
+      line-height: 1.7;
+    }
+  }
+  &__intro-img {
+    width: 40%;
+    height: auto;
+  }
+  &__texts {
+    width: 40%;
+    color: @white;
+
+    &--heading {
+      width: 100%;
+      font-size: 4rem;
+      font-family: "Raleway";
+      line-height: 1.8;
+    }
+    &--description {
+      width: 100%;
+      font-size: 2rem;
+      font-family: "Open Sans";
+      line-height: 1.6;
+      margin-bottom: 3.3rem;
+    }
+  }
+  &__button {
+    border: none;
+    border-bottom: 1px solid @cyan;
+    background: transparent;
+    color: @cyan;
+    font-size: 2.1rem;
+    padding: 0;
+    padding-right: 2.5rem;
+    position: relative;
+    &::after {
+      content: "";
+      width: 2rem;
+      height: 1.5rem;
+      background-image: url("../images/icon-arrow.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      margin-left: 1rem;
+    }
+  }
+}

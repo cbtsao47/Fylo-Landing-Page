@@ -24,9 +24,11 @@ html {
   box-sizing: border-box;
   background: hsl(217, 28%, 15%);
 }
-.container-body {
+.container-intro,
+.container-feature {
   width: 80%;
   margin: 0 auto;
+  height: 100vh;
 }
 .nav {
   width: 100%;
@@ -52,13 +54,11 @@ html {
   margin-right: 0;
 }
 .header {
-  border: 1px solid white;
   text-align: center;
 }
 .header__container {
   margin: 0 auto;
-  width: 50%;
-  border: 1px solid white;
+  width: 60%;
   line-height: 1.6;
 }
 .header__img {
@@ -79,4 +79,68 @@ html {
   color: hsl(0, 0%, 100%);
   font-size: 1.8rem;
   font-weight: 700;
+}
+.feature {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.feature__box {
+  padding: 5rem;
+  width: 40%;
+  align-self: stretch;
+  text-align: center;
+}
+.feature__text--heading {
+  font-size: 3rem;
+  color: hsl(0, 0%, 100%);
+}
+.feature__text--description {
+  color: #969da7;
+  font-size: 2rem;
+  line-height: 1.7;
+}
+.feature__intro-img {
+  width: 40%;
+  height: auto;
+}
+.feature__texts {
+  width: 40%;
+  color: hsl(0, 0%, 100%);
+}
+.feature__texts--heading {
+  width: 100%;
+  font-size: 4rem;
+  font-family: "Raleway";
+  line-height: 1.8;
+}
+.feature__texts--description {
+  width: 100%;
+  font-size: 2rem;
+  font-family: "Open Sans";
+  line-height: 1.6;
+  margin-bottom: 3.3rem;
+}
+.feature__button {
+  border: none;
+  border-bottom: 1px solid hsl(176, 68%, 64%);
+  background: transparent;
+  color: hsl(176, 68%, 64%);
+  font-size: 2.1rem;
+  padding: 0;
+  padding-right: 2.5rem;
+  position: relative;
+}
+.feature__button::after {
+  content: "";
+  width: 2rem;
+  height: 1.5rem;
+  background-image: url("../images/icon-arrow.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 1rem;
 }
