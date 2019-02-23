@@ -1,0 +1,35 @@
+.cta {
+  .flex(row, center, center);
+  width: 90%;
+  margin: 0 auto;
+  &__image {
+    width: 45%;
+    margin-right: 7%;
+  }
+  &__text {
+    > * {
+      margin-bottom: 2rem;
+    }
+    &--header {
+      color: @font-color;
+      font-size: @heading-font-size;
+    }
+    &--description {
+      color: @paragraph-color;
+    }
+  }
+  &__button {
+    text-align: left;
+    background: transparent;
+    color: @secondary-cyan;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid @secondary-cyan;
+    &::after {
+      content: "";
+      background-image: url("../images/icon-arrow.svg");
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

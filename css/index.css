@@ -126,6 +126,27 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: "Raleway";
+  font-weight: 700;
+}
+h2 {
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+p {
+  color: #a3a3a3;
+  font-size: 1.6rem;
+  font-family: "Open Sans";
+}
+h1,
+h2,
+h3 {
+  line-height: 1.4;
+}
 * {
   box-sizing: inherit;
 }
@@ -147,10 +168,7 @@ body {
   position: relative;
 }
 main {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  background: hsl(218, 28%, 13%);
 }
 .nav {
   display: flex;
@@ -252,4 +270,40 @@ main {
 }
 .feature__description {
   color: #a3a3a3;
+}
+.cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 90%;
+  margin: 0 auto;
+}
+.cta__image {
+  width: 45%;
+  margin-right: 7%;
+}
+.cta__text > * {
+  margin-bottom: 2rem;
+}
+.cta__text--header {
+  color: white;
+  font-size: 3rem;
+}
+.cta__text--description {
+  color: #a3a3a3;
+}
+.cta__button {
+  text-align: left;
+  background: transparent;
+  color: hsl(176, 68%, 64%);
+  outline: none;
+  border: none;
+  border-bottom: 2px solid hsl(176, 68%, 64%);
+}
+.cta__button::after {
+  content: "";
+  background-image: url("../images/icon-arrow.svg");
+  width: 10px;
+  height: 10px;
 }
