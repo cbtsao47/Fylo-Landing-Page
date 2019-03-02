@@ -1,0 +1,52 @@
+.card {
+  margin: 10rem 0;
+  flex: 1 1 60rem;
+  padding: 3rem;
+  background: @primary-dark-blue-4;
+  box-shadow: 2rem 2rem 3rem rgba(@primary-dark-blue-3, 0.5);
+  &:not(:last-child) {
+    margin-right: 5rem;
+  }
+  &:first-child {
+    position: relative;
+  }
+  &:first-child::before {
+    content: "";
+    width: 7rem;
+    height: 7rem;
+    background-image: url(../images/bg-quotes.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    top: -4.5rem;
+    left: -1.5rem;
+    position: absolute;
+    z-index: -1;
+  }
+  &__review {
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 3rem;
+  }
+  &__photo {
+    float: left;
+    border-radius: 50px;
+    width: 5rem;
+  }
+  &__text {
+    color: #fff;
+    .flex(column, center, flex-start);
+    margin-left: 7rem;
+    margin-top: 4.5rem;
+  }
+  &__text--name {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #fff;
+  }
+  &__text--description {
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+    color: @links;
+  }
+}

@@ -6,12 +6,15 @@ html {
   box-sizing: border-box;
   background: @primary-dark-blue-1;
 }
-
+body {
+  width: 90%;
+  max-width: 155rem;
+  margin: 0 auto;
+}
 .container-intro,
 .container-feature {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  height: 100vh;
 }
 .container-intro {
   position: relative;
@@ -26,4 +29,14 @@ html {
   background: @primary-dark-blue-2;
   position: relative;
   z-index: 2;
+}
+
+.testimonials {
+  .flex(row, center, center);
+  background: @primary-dark-blue-2;
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5rem;
 }

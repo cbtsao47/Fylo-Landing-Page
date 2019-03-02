@@ -24,11 +24,15 @@ html {
   box-sizing: border-box;
   background: hsl(217, 28%, 15%);
 }
+body {
+  width: 90%;
+  max-width: 155rem;
+  margin: 0 auto;
+}
 .container-intro,
 .container-feature {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
-  height: 100vh;
 }
 .container-intro {
   position: relative;
@@ -43,6 +47,18 @@ html {
   background: hsl(218, 28%, 13%);
   position: relative;
   z-index: 2;
+}
+.testimonials {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background: hsl(218, 28%, 13%);
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 5rem;
 }
 .nav {
   width: 100%;
@@ -79,6 +95,7 @@ html {
 }
 .header__img {
   width: 100%;
+  max-width: 85rem;
   height: auto;
   object-fit: contain;
 }
@@ -167,4 +184,59 @@ html {
   top: 50%;
   transform: translateY(-50%);
   margin-left: 1rem;
+}
+.card {
+  margin: 10rem 0;
+  flex: 1 1 60rem;
+  padding: 3rem;
+  background: hsl(219, 30%, 18%);
+  box-shadow: 2rem 2rem 3rem rgba(11, 21, 35, 0.5);
+}
+.card:not(:last-child) {
+  margin-right: 5rem;
+}
+.card:first-child {
+  position: relative;
+}
+.card:first-child::before {
+  content: "";
+  width: 7rem;
+  height: 7rem;
+  background-image: url(../images/bg-quotes.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  top: -4.5rem;
+  left: -1.5rem;
+  position: absolute;
+  z-index: -1;
+}
+.card__review {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+.card__photo {
+  float: left;
+  border-radius: 50px;
+  width: 5rem;
+}
+.card__text {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 7rem;
+  margin-top: 4.5rem;
+}
+.card__text--name {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+}
+.card__text--description {
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+  color: #969da7;
 }
