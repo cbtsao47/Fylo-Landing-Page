@@ -1,0 +1,49 @@
+.card {
+  background: @primary-dark-blue-4;
+  padding: 3rem 2rem;
+  margin-right: 2rem;
+  box-shadow: 1rem 1rem 2rem rgba(@primary-dark-blue-3, 0.8);
+  position: relative;
+  z-index: 1;
+  &:first-child::before {
+    content: "";
+    width: 7rem;
+    height: 7rem;
+    background: url(../images/bg-quotes.png) no-repeat;
+    position: absolute;
+    top: -3rem;
+    left: -1.3rem;
+    z-index: 0;
+  }
+  &:last-child {
+    margin-right: 0;
+  }
+  &__paragraph {
+    color: #bec7d4;
+    font-family: "Open Sans";
+    font-size: 1.6rem;
+  }
+  &__profile {
+    border-radius: 50px;
+    width: 5rem;
+    margin-right: 1.5rem;
+  }
+  &__texts {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 8px;
+  }
+  &__name {
+    color: #fff;
+    font-size: 1.6rem;
+    font-weight: 700;
+    font-family: "Raleway";
+    margin: 0;
+  }
+  &__description {
+    font-size: 1.2rem;
+    color: @links;
+    font-family: "Raleway";
+    margin: 0;
+  }
+}

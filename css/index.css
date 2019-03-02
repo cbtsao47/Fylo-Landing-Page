@@ -28,7 +28,7 @@ html {
 .container-feature {
   width: 80%;
   margin: 0 auto;
-  height: 100vh;
+  height: 100%;
 }
 .container-intro {
   position: relative;
@@ -43,6 +43,16 @@ html {
   background: hsl(218, 28%, 13%);
   position: relative;
   z-index: 2;
+}
+.review {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10rem 4rem;
+  width: 80%;
+  margin: 0 auto;
+  background: hsl(218, 28%, 13%);
 }
 .nav {
   width: 100%;
@@ -110,16 +120,11 @@ html {
   text-align: center;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
 }
-.feature__img--wrapper {
-  border: 1px solid white;
-  width: 100%;
-  height: 20%;
-}
 .feature__img {
-  max-height: 150px;
+  height: 80px;
   object-fit: contain;
 }
 .feature__text--heading {
@@ -173,4 +178,53 @@ html {
   top: 50%;
   transform: translateY(-50%);
   margin-left: 1rem;
+}
+.card {
+  background: hsl(219, 30%, 18%);
+  padding: 3rem 2rem;
+  margin-right: 2rem;
+  box-shadow: 1rem 1rem 2rem rgba(11, 21, 35, 0.8);
+  position: relative;
+  z-index: 1;
+}
+.card:first-child::before {
+  content: "";
+  width: 7rem;
+  height: 7rem;
+  background: url(../images/bg-quotes.png) no-repeat;
+  position: absolute;
+  top: -3rem;
+  left: -1.3rem;
+  z-index: 0;
+}
+.card:last-child {
+  margin-right: 0;
+}
+.card__paragraph {
+  color: #bec7d4;
+  font-family: "Open Sans";
+  font-size: 1.6rem;
+}
+.card__profile {
+  border-radius: 50px;
+  width: 5rem;
+  margin-right: 1.5rem;
+}
+.card__texts {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 8px;
+}
+.card__name {
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-family: "Raleway";
+  margin: 0;
+}
+.card__description {
+  font-size: 1.2rem;
+  color: #969da7;
+  font-family: "Raleway";
+  margin: 0;
 }
