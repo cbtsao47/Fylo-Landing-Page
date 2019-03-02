@@ -1,5 +1,5 @@
 .nav {
-  position: relative;
+  // position: relative;
   width: 100%;
   .flex(row, space-between, center);
 
@@ -29,6 +29,7 @@
     position: absolute;
     top: 0;
     right: 0;
+    cursor: pointer;
     & > * {
       display: block;
       width: 5rem;
@@ -39,5 +40,55 @@
     @media (max-width: 1000px) {
       .flex(column, space-evenly, center);
     }
+  }
+}
+.modal {
+  display: none;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  background: @primary-dark-blue-3;
+  position: absolute;
+  z-index: 9999;
+  top: 0;
+  right: 0;
+  color: white;
+  &__close {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 5rem;
+    cursor: pointer;
+  }
+  &__links {
+    .flex(column, center, center);
+    width: 100%;
+    height: 100%;
+  }
+  &__link {
+    text-decoration: none;
+    color: rgba(200, 200, 200, 0.8);
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    font-family: "Raleway";
+    &:hover {
+      color: rgba(250, 230, 230, 0.8);
+    }
+  }
+  animation-name: appear;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+.show {
+  display: block;
+  opacity: 1;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
